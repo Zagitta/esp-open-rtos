@@ -42,8 +42,10 @@ PRINTF_SCANF_FLOAT_SUPPORT ?= 1
 
 FLAVOR ?= release # or debug
 
+TOOL_DIR ?= $(ESP_HOME)/xtensa-lx106-elf/bin
+
 # Compiler names, etc. assume gdb
-CROSS ?= xtensa-lx106-elf-
+CROSS ?= $(TOOL_DIR)/xtensa-lx106-elf-
 
 # Path to the filteroutput.py tool
 FILTEROUTPUT ?= $(ROOT)/utils/filteroutput.py
